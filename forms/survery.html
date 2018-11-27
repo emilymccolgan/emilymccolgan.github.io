@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>music survey</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+<style>
+body {
+font-size: 1.3em;
+background-color: beige;
+
+}
+content{
+width:90%;
+margin:auto;
+}
+
+h1 {
+text-align:center;
+}
+
+form {
+margin-left:5%;
+}
+input {
+margin-bottom:2%;
+}
+input#submit {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+</style>
+</head>
+<body>
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  First name:
+   <input type="text" name="firstname">
+   <br>
+   Last name:
+   <input type="text" name="lastname">
+   <br><br>
+   email:
+<input type="email" name="email"> <br>
+<em>what role does music play in your life?</em><br>
+<textarea name="musicrole"cols=60 rows=3></textarea><br>
+<fieldset>
+  <legend>How often do you purchase CDs?</legend>
+<input type="radio" name="purchase" value=weekly> weekly <br>
+<input type="radio" name="purchase" value="a few per year">a few per year<br>
+<input type="radio" name="purchase" value=monthly>monthly<br>
+<input type="radio" name="purchase" value=never>never<br>
+</fieldset>
+<fieldset>
+  <legend>Select your favorite type of music?</legend>
+<input type="checkbox"name=pop value="pop">pop<br>
+<input type="checkbox"name=classical value="classical">classical<br>
+<input type="checkbox"name=rap value="rap">rap<br>
+<input type="checkbox"name=folk value="folk">folk<br>
+<input type="checkbox"name=rock value="rock">rock<br>
+<input type="checkbox"name=other value="other">other<br>
+</fieldset>
+<br> <em> select the locations you listen to music </em> <br>
+
+</select>
+<select name=location size=3 multiple>
+  <option value="at home">at home</option>
+  <option value="at work">at work</option>
+  <option value="in the car">in the car</option>
+  <option value="live">live</option>
+</select>
+   <input id="submit" type="submit" value="Submit" name=submit>
+
+</form>
+</body>
+</html>
