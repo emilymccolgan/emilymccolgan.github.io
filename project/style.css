@@ -1,0 +1,59 @@
+body {
+  background-color: lightGrey;
+}
+
+nav {
+  text-align:center;
+  background-color:white;
+}
+
+li a {
+  text-decoration:none;
+  color:lightPink;
+  margin-left:2%;
+  margin-right:2%;
+
+}
+
+li a:hover {
+  background-color: lightGrey;
+}
+
+#content{
+  text-align:center;
+}
+
+#photo {
+  text-align:center;
+  padding-top:2%;
+}
+
+h1{
+  text-align:center;
+  color:grey;
+}
+ul{
+   padding-top:5%;
+   display:inline;
+}
+ol{
+  padding-top: 0%; margin-bottom: 5%; margin-left: 2%;
+}
+ul li{
+  display:inline;
+  color:gold;
+font-size:1.5em;
+}
+
+#events li {
+  display:block;
+}
+figcaption{
+color:white;
+font-style:italic;
+}
+footer{
+  text-align: center;
+  margin-left: auto;
+  font-style: italic;
+}
