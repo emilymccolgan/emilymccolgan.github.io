@@ -10,13 +10,27 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
+
 #events li{
   color:black;
-} vb  e
+  padding-top:5%;
+  padding-left:5%;
+}
+
+events li span {
+
+}
+form {
+  font-size:1.4em;
+  padding:2%;
+  width:40%;
+}
+
 </style>
 
 <body>
-<h1>mineral class examples</h1>
+<h1>Upcoming Events &amp; Contact information:</h1>
 <nav>
   <ul>
   <li><a href="portfolio_home.html">Emily's Portfolio!</a></li>
@@ -25,13 +39,56 @@
 </ul>
 </nav>
 <content>
-<p> Here might be a list of upcoming events</p>
 <ul id="events">
-  <li>event 1: time place </li>
-  <li>event 1: time place </li>
-  <li>event 1: time place </li>
+  <!-- date --> <!-- time --> <!-- location -->
+  <li>
+    <span class="date">12/26/2018</span> -
+    <span class="time">7pm</span> -
+    <span class="location">Reading, MA</span>
+  </li>
+  <li>
+    <span class="date">Sinclair</span>
+      <span class="time">9pm</span>
+      <span class="location">Harvard Sq, Cambridge, MA</span>
+    </li>
+  <li>
+    <span class="date">...</span>
+      <span class="time">...</span>
+      <span class="location">...</span>
+  </li>
 </ul>
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  <fieldset>First name:
+   <input type="text" name="firstname">
+   <br>
+   Last name:
+   <input type="text" name="lastname">
+   <br><br>
+   email:
+<input type="email" name="email"> <br><br>
+<em>How did you hear about me?</em><br>
+<textarea name="howdidyouhear" cols="100" rows="4"></textarea><br></fieldset>
+<fieldset>
+  <legend>How often do you purchase CDs?</legend>
+<input type="radio" name="purchase" value=weekly> weekly <br>
+<input type="radio" name="purchase" value="a few per year">a few per year<br>
+<input type="radio" name="purchase" value=monthly>monthly<br>
+<input type="radio" name="purchase" value=never>never<br>
+</fieldset>
+<fieldset>
+  <legend>Select your favorite type of music?</legend>
+<input type="checkbox"name=pop value="pop">pop<br>
+<input type="checkbox"name=classical value="classical">classical<br>
+<input type="checkbox"name=rap value="rap">rap<br>
+<input type="checkbox"name=folk value="folk">folk<br>
+<input type="checkbox"name=rock value="rock">rock<br>
+<input type="checkbox"name=other value="other">other<br>
+</fieldset>
+<br>
 
+   <input id="submit" type="submit" value="Submit" name=submit>
+
+</form>
 </content>
  <footer> Emily McColgan &copy; 2018</footer></footer>
 </body>
