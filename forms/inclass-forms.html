@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>music survey</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+<style>
+  label {font-weight:bold; color:green;}
+  #range {color:red;}
+  .column {float:left;padding:20px;width:40%}
+</style>
+</head>
+<body>
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+name: <input type="text" name="name" value="">
+<br>
+email: <input type="email" name="email">
+<br>
+range: <input type="range" name="range" min="1" max="100" value="this.valueAsNumber" onchange="showValue(this.value)">
+<br>
+<div id="range"> 0 </div>
+<datalist id="browsers">
+<option value="explorer">
+<option value="firefox">
+<option value="chrome">
+<option value="safari">
+</datalist>
+  <input type="submit" name="submit" value="submit">
+</form>
+<div class="column"><img src="../project/emza.png" width=37% alt="Emily M's photo"> </div>
+<script type="text/javascript">
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+</body>
+</html>
