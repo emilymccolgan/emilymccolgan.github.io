@@ -23,14 +23,20 @@ events li span {
 }
 form {
   font-size:1.4em;
-  padding:2%;
+  padding:3%;
   width:40%;
+}
+
+.events {
+
 }
 
 </style>
 
 <body>
+<div style="background-image: url('site_banner.png'); background-repeat:no-repeat; height:500px;">
 <h1>Upcoming Events &amp; Contact information:</h1>
+</div>
 <nav>
   <ul>
   <li><a href="portfolio_home.html">Emily's Portfolio!</a></li>
@@ -39,6 +45,7 @@ form {
 </ul>
 </nav>
 <content>
+<div class="events">
 <ul id="events">
   <!-- date --> <!-- time --> <!-- location -->
   <li>
@@ -52,11 +59,12 @@ form {
       <span class="location">Harvard Sq, Cambridge, MA</span>
     </li>
   <li>
-    <span class="date">...</span>
-      <span class="time">...</span>
-      <span class="location">...</span>
+    <span class="date">2/20/2019</span>
+      <span class="time">8pm</span>
+      <span class="location">Malden, MA</span>
   </li>
 </ul>
+</div>
 <form action="https://idesstage2.bc.edu/class/results.php" method="post">
   <fieldset>First name:
    <input type="text" name="firstname">
@@ -67,27 +75,10 @@ form {
    email:
 <input type="email" name="email"> <br><br>
 <em>How did you hear about me?</em><br>
-<textarea name="howdidyouhear" cols="100" rows="4"></textarea><br></fieldset>
-<fieldset>
-  <legend>How often do you purchase CDs?</legend>
-<input type="radio" name="purchase" value=weekly> weekly <br>
-<input type="radio" name="purchase" value="a few per year">a few per year<br>
-<input type="radio" name="purchase" value=monthly>monthly<br>
-<input type="radio" name="purchase" value=never>never<br>
-</fieldset>
-<fieldset>
-  <legend>Select your favorite type of music?</legend>
-<input type="checkbox"name=pop value="pop">pop<br>
-<input type="checkbox"name=classical value="classical">classical<br>
-<input type="checkbox"name=rap value="rap">rap<br>
-<input type="checkbox"name=folk value="folk">folk<br>
-<input type="checkbox"name=rock value="rock">rock<br>
-<input type="checkbox"name=other value="other">other<br>
-</fieldset>
+<textarea name="howdidyouhear" cols="100" rows="4"></textarea><br>
 <br>
-
-   <input id="submit" type="submit" value="Submit" name=submit>
-
+<input id="submit" type="submit" value="Submit" name=submit>
+</fieldset>
 </form>
 </content>
  <footer> Emily McColgan &copy; 2018</footer></footer>

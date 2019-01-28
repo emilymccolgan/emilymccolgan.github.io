@@ -19,8 +19,7 @@ li a:hover {
   background-color: lightGrey;
 }
 
-#content{
-  text-align:center;
+content{
     width:80%;
 }
 
@@ -31,7 +30,7 @@ li a:hover {
 
 h1{
   text-align:center;
-  color:grey;
+  color:black;
 }
 ul{
    padding-top:5%;
